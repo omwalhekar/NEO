@@ -1,0 +1,22 @@
+form{
+    margin-top: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #f8e1f4;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+  }
+
+tr:last-child{
+    border-bottom: 1px solid #ddd;
+}
+
+.mytable{
+    margin-top: 30px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Neo Data </title>
+</head>
+<body>
+    <form class="" action="/" method="post">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" style="vertical-align: middle;">
+                    <label style="vertical-align: middle;" for="initialDate">InitialDate:</label>
+                    <input id="initialDate" type="date" name="date1" value="">
+                </div>
+               
+                <div class="col-sm-6">
+                    <label for="finalDate">FinalDate:</label>
+                    <input id="finalDate" type="date" name="date2" value="">
+                </div>
+                
+                <div class="col-sm">
+                    <button type="submit" class="btn btn-dark">Find Objects</button>
+                </div>
+            </div>
+            
+                   
+        </div>
+        
+
+    
+<table class="table mytable">
+    <thead class="thead-dark">
+            
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Body Designation</th>
+                <th scope="col">Date&Time</th>
+                <th scope="col">Min Approach Dist(au)</th>
+                
+            </tr>
+    </thead>
+    
+    <tbody>
+    
+        <% for(var i = 0; i< neoArray.length ; i++){ %>
+                
+            <tr>
+                <th scope="row"><%= i+1%></th>
+                <td><%=neoArray[i][0]%></td>
+                <td><%=neoArray[i][3]%></td>
+                <td><%=neoArray[i][6]%></td>
+                
+            </tr>
+
+        <% } %>
+      
+    </tbody>
+  </table>
+  
+   
+    
+    </form>
+</body>
+
+</html>
